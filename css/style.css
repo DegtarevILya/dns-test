@@ -1,0 +1,169 @@
+body{
+	font-family: Arial;
+}
+h1{
+	text-align: center;
+}
+.tree
+{
+	margin:0 auto;
+	padding:0;
+	width: 500px;
+	height:500px;
+	overflow:auto;
+	border: 1px solid #444444;
+}
+.tree li
+{
+	list-style: none;
+	margin:0;
+	padding:0 0 0 40px;
+	line-height: 17px;
+}
+
+.tree li span
+{
+	display:inline-block;
+	clear: left;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.tree li span:hover
+{
+	background:#e2eff8;
+}
+.tree ul
+{
+	margin:0; 
+	padding:0;
+}
+
+.tree .line
+{
+	line-height: 10px;
+	height:10px;
+	font-size:10px;
+}
+.tree .line-last
+{
+	margin:0 0 0 -16px;
+	padding:0;
+	line-height: 10px;
+	height:10px;
+	font-size:10px;
+	background: url('../images/spacer.gif') 0 0 no-repeat transparent;
+}
+.tree .line-over, .tree .line-over-last
+{
+	background-color: red;
+	height:10px;
+	line-height:10px;
+	font-size:10px;
+	width:100%;
+	background: url('../images/dot.png') center repeat-x transparent;
+}
+.tree .folder-open
+{
+	margin-left:-16px;
+	background: url('../images/collapsable.png') no-repeat #fff;
+}
+.tree .folder-open-last
+{
+	margin-left:-16px;
+	background: url('../images/collapsable.png') no-repeat #fff;
+}
+.tree .folder-close
+{
+	margin-left:-16px;
+	background: url('../images/expandable.png') no-repeat #fff;
+}
+.tree .folder-close-last
+{
+	margin-left:-16px;
+	background: url('../images/expandable.png') no-repeat #fff;
+	border: 0;
+}
+.tree .doc
+{
+	margin-left:-16px;
+	background: url('../images/leaf.png') no-repeat #fff;
+}
+.tree .doc-last
+{
+	margin-left:-16px;
+	background: url('../images/leaf.png') no-repeat #fff;
+}
+.tree .ajax
+{
+	background: url('../images/spinner.gif') no-repeat 0 0 #ffffff;
+	background-position-x: 18px;
+	height: 16px;
+	display:none;
+}
+.tree .ajax li
+{
+	display:none;
+	margin:0; 
+	padding:0;
+}
+.tree .trigger
+{
+	display:inline;
+	margin-left:-42px;
+	width: 42px;
+	height: 17px;
+	cursor:pointer;
+	vertical-align: middle;
+}
+.tree .text
+{
+	cursor: default;
+}
+.tree .active
+{
+	cursor: default;
+	background-color:#c1ddf1;
+}
+.tree li
+#drag_container
+{
+	background:#ffffff;
+	color:#000;
+	font: normal 11px arial, tahoma, helvetica, sans-serif;
+	border: 1px dashed #767676;
+}
+#drag_container ul
+{
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+
+#drag_container li
+{
+	list-style: none;
+	background-color:#ffffff;
+	line-height:18px;
+	white-space: nowrap;
+	padding:1px 1px 0px 16px;
+	margin:0;
+}
+#drag_container li span
+{
+	border:1px solid #ccc;
+	padding:3px;
+}
+
+#drag_container li.doc, #drag_container li.doc-last
+{
+	background: url('../images/leaf.png') no-repeat -17px 0 #ffffff;
+}
+#drag_container .folder-close, #drag_container .folder-close-last
+{
+	background: url('../images/expandable.png') no-repeat -17px 0 #ffffff;
+}
+
+#drag_container .folder-open, #drag_container .folder-open-last
+{
+	background: url('../images/collapsable.png') no-repeat -17px 0 #ffffff;
+}
